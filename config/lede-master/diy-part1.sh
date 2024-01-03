@@ -10,6 +10,9 @@
 # sed -i '$a src-git lienol https://github.com/Lienol/openwrt-package' feeds.conf.default
 
 sed -i '$a src-git helloworld https://github.com/fw876/helloworld.git;main' feeds.conf.default
+sed -i '$a src-git kenzo https://github.com/kenzok8/openwrt-packages.git;master' feeds.conf.default
+sed -i '$a src-git small https://github.com/kenzok8/small.git;master' feeds.conf.default
+sed -i '$a src-git small8 https://github.com/kenzok8/small-package.git;main' feeds.conf.default
 
 sed -i '2a ifconfig rai0 up\nifconfig ra0 up\nbrctl addif br-lan rai0\nbrctl addif br-lan ra0' package/base-files/files/etc/rc.local
 
